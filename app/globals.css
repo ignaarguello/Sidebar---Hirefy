@@ -1,0 +1,206 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+#contenedor-superior__sideBar {
+  /* border: 5px solid gray; */
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+#contenedor-sideBar {
+  /*  border: 2px solid red; */
+  min-height: 95vh;
+  width: 23%;
+  padding: 0.8rem;
+  background-color: #f5f3ff;
+  flex-direction: column;
+}
+
+#header-sideBar {
+  /* border: 2px solid lawngreen; */
+  width: 100%;
+  display: flex;
+  min-height: 10vh;
+  border-radius: 0px 20px 0px 0px;
+  background-color: #184e77;
+  color: rgb(237, 237, 237);
+}
+
+.contenedor-internos__sideBar:nth-child(1) {
+  /* border: 2px solid chartreuse; */
+  width: 80%;
+  display: flex;
+  align-items: center;
+  margin-left: 0.5rem;
+}
+
+.contenedor-internos__sideBar:nth-child(2) {
+  /* border: 2px solid aqua; */
+  width: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#respaldo-bakckground_bussinessIcon {
+  background-color: rgba(38, 38, 38, 0.597);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#titulo-hirefly {
+  font-weight: bold;
+  font-size: 16px;
+  margin-left: 8px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    letter-spacing: .5px;
+    color: white;
+}
+
+#BusinessCenterIcon {
+  margin: 3px;
+  padding: 2px;
+  color: #52b69a;
+}
+
+#CloseIcon {
+  cursor: pointer;
+}
+
+/* Body */
+
+#body-sideBar {
+  /* border: 2px solid red; */
+  min-height: 70vh;
+  padding: 0.6rem;
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+}
+
+.contenedor-item__sideBar {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 13px;
+  cursor: pointer;
+  transition: 0.5s ease;
+  padding: 3px;
+}
+
+.contenedor-item__sideBar:hover {
+  background-color: rgba(85, 176, 214, 0.563);
+  border-radius: 5px;
+}
+
+.logo-item__sideBar {
+  /* border: 2px solid red; */
+  padding: 3px;
+}
+
+.container-logo-dropdown {
+  margin-left: 8rem;
+}
+
+#arrow-icon {
+  color: #184e77;
+}
+
+#contenedor-subLinks__sideBar {
+  /* border: 2px solid red; */
+  border-left: 2px solid rgb(181, 181, 181);
+  padding-left: 1.5rem;
+  display: flex;
+  align-items: center;
+  margin-left: 1rem;
+  margin-top: 0.4rem;
+  display: none;
+}
+
+/* Clases Show */
+
+.show-content {
+  display: block !important;
+}
+
+.subContenedor-subLinks {
+  /* border: 2px solid slateblue; */
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 13px;
+}
+
+.nombre-subLink {
+  font-size: 13px;
+}
+
+.each-contenedor-subLinks {
+/*   border: 2px solid lawngreen; */
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  align-items: center;
+  padding: 0.3rem;
+  flex-direction: column;
+}
+
+.contenedor-tituloAndFigure__subLinks {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+}
+
+.each-contenedor__SubItem2 {
+  border-left: 2px solid rgb(167, 167, 167);
+  width: 100%;
+  margin-left: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  font-size: 13px;
+  padding-left: 0.5rem;
+  margin-top: 12px;
+  display: none;
+}
+
+.hr-footer {
+  border: 1px ridge rgb(216, 216, 216);
+  width: 90%;
+ margin: auto;
+ border-radius: 20px;
+}
+
+#footer_sideBar {
+  min-height: 10vh;
+  background-color: white;
+  padding: 1rem;
+  font-size: 13px;
+  border-radius: 0px 0px 20px 0px;
+}
+
+#container-refsLinks__FooterSideBar{
+  display: flex;
+  justify-content: space-around;
+  font-size: 13px;
+  margin-top: 20px;
+  color: #184e77;
+  cursor: pointer;
+}
+
+@media screen and (min-width:1920px) {
+  .container-logo-dropdown {
+    margin-left: 15rem;
+  }
+}
